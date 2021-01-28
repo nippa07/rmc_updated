@@ -1,0 +1,49 @@
+body {
+    background-color: ivory;
+}
+
+
+#btn {
+    width: 12.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr {
+    width: 66%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#section {
+    margin-left: auto;
+    margin-right: auto;
+    width: 8rem;
+    height: 9rem;
+    background-color: gold;
+    border: black;
+    border-radius: 1em;
+}
+
+h6 {
+    margin: 1px;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    #img {
+        display: none;
+    }
+    #btn {
+        width: 7rem;
+    }
+    #mid{
+        margin-left: -5rem;
+        width: 120%;
+    }
+    #right {
+        margin-left: -1rem;
+    }
+}

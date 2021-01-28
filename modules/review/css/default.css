@@ -1,0 +1,400 @@
+#reviewContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#reviewContractorSearchInput{
+    width: calc(90% - 2px);
+    height: 50px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-bottom: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    outline: none;
+    z-index: 2;
+    text-transform: uppercase;
+}
+
+#reviewContractorRemoveBtn{
+    height: 30px;
+    width: 30px;
+    margin-top: -30px;
+    background-color: #ccc;
+    border-radius: 30px;
+    position: relative;
+    top: 40px;
+    left: calc(45% - 25px);
+    z-index: 3;
+    cursor: pointer;
+    outline: none;
+}
+
+#reviewContractorsListDiv{
+    background-color: white;
+    width: calc(90% - 4px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;    
+    border-bottom-right-radius: 20px;
+    border: 1px solid grey;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.reviewContractorListLine:hover{
+    background-color: #eee;
+}
+
+.reviewContractorListLine{
+    width: 100%;
+    height: 50px;
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid #dadada;
+    cursor: pointer;
+}
+
+
+.reviewContractorListLine:first-child{
+    padding-top: 20px;
+    height: 70px;
+}
+.reviewContractorListLine:last-child{
+    border-bottom: none;
+}
+
+#reviewContent{
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#reviewRateDiv{
+    width: calc(90% - 40px);
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 10px;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.reviewStar{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+.disabled{
+    opacity: 0.5;
+}
+
+#reviewCommentDiv{
+    height: 200px;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+#reviewCommentTextarea:disabled{
+background-color: #c7c7c7;
+}
+
+#reviewCommentTextarea{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    resize: none;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid black;
+    text-align: justify;
+    text-align-last: left;
+}
+.replyCommentTextarea{
+    width: 100%;
+    height: 66px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    resize: none;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid black;
+    text-align: justify;
+    text-align-last: left;
+    z-index: 3;
+}
+
+#reviewCommentMaxCounter{
+    width: calc(100% - 10px);
+    height: 20px;
+    padding: 0px 10px 0px 0px;
+    margin-top: -20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 12px;
+    color: grey;
+}
+.reviewCommentMaxCounter{
+    width: calc(100% - 10px);
+    height: 20px;
+    padding: 0px 10px 0px 0px;
+    margin-top: -20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 12px;
+    color: grey;
+    z-index: 2;
+}
+
+
+#sendReviewBtn{
+    height: 40px;
+    width: 140px;
+    margin: 0 10px 0 10px;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid rgb(0, 77, 0);
+    background-color: rgb(183, 240, 186);
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 16px;
+}
+
+.validBtn{
+    height: 40px;
+    width: 140px;
+    margin: 0 10px 0 10px;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid rgb(0, 77, 0);
+    background-color: rgb(183, 240, 186);
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 16px;
+}
+
+.cancelBtn{
+    height: 40px;
+    width: 140px;
+    margin: 0 10px 0 10px;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid rgb(247, 28, 28);
+    background-color: rgb(241, 139, 139);
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 16px;
+}
+
+#reviewListDiv{
+    width: 100%;
+    height: 100%;
+}
+
+
+.reviewDiv{
+    width: 80%;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.reviewStarList{
+    height: 30px;
+    width: 30px;
+}
+
+.reviewTopSection{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviewTitle{
+    width: calc(75% - 40px);
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-weight: 650;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    white-space: nowrap;
+}
+
+.reviewRate{
+    width: calc(25% - 40px);
+    height: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.reviewContentText{
+    width: 100%;
+    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+    text-align: justify;
+    text-align-last: auto;
+    word-wrap: break-word;
+}
+
+.reviewDate{
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.replyDiv{
+    width: 80%;
+    background-color: #ddd;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+.replyDate{
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.replySendBtn{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 70px;
+    position: relative;
+    left: calc(50% - 36px);
+    /* top: -38px; */
+    margin-top: -37px;
+    z-index: 2;
+    cursor: pointer;
+
+}
+
+#blackBG{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+}
+
+.fullPageDiv{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 51;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inPageDiv{
+    height: auto;
+    width: auto;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1.5rem;
+    
+}
+
+.newContractorLine{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.newContractorLabel{
+    width: 25%;
+}
+
+.newContractorInput{
+    width: calc(75% - 2px);
+    height: 50px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    outline: none;
+}
+#newContractorNameInput{
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+
+}

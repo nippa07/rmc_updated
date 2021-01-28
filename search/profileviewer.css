@@ -1,0 +1,15 @@
+#body {
+    margin-top: 2rem;
+}
+
+#imgpro {
+    margin-left: -9rem;
+}
+
+#child {
+transition: .5s ease;
+}
+
+#child:hover {
+transform: scale(1.5);
+}

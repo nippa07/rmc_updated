@@ -1,0 +1,9 @@
+#re h1 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 18rem;
+    width: auto;
+    height: auto;
+    background-color: white;
+}

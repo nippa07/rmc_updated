@@ -1,0 +1,60 @@
+.form-div {
+    margin-top: 1em;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    width: 100%;
+    margin-left: -20rem;
+}
+
+#profileDisplay {
+    height: 210px;
+    width: 60%;
+    margin: 0px auto;
+    border-radius: 50%;
+}
+
+.img-placeholder {
+    width: 60%;
+    color: white;
+    height: 100%;
+    background: black;
+    opacity: .7;
+    height: 210px;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.img-placeholder h4 {
+    margin-top: 40%;
+    color: white;
+}
+
+.img-div:hover .img-placeholder {
+    display: block;
+    cursor: pointer;
+}
+
+#update_profile {
+    border-radius: 6px;
+}
+
+#form {
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    border-radius: 5px;
+    position: relative;
+}
+
+#head {
+    margin-right: -20rem;
+}
+
+a {
+    color: white;
+}

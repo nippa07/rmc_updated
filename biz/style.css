@@ -1,0 +1,135 @@
+body {
+    background-image: url(../resources/background1.jpg);
+}
+
+#card {
+    padding-top: 1rem;
+}
+#card2 {
+    padding-top: 7rem; 
+}
+
+label {
+    font-size: .5em;
+    font-weight: 500;
+}
+#uid {
+    margin-top: -.1em;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 525;
+    border-radius: .75em;
+    border-width: 2px;
+}
+#pwd {
+    margin-top: -.1em;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 525;
+    border-radius: .75em;
+    border-width: 2px;
+}
+#pwd-repeat {
+    margin-top: -.1em;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 525;
+    border-radius: .75em;
+    border-width: 2px;
+}
+#phone {
+    margin-top: -.1em;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 525;
+    border-radius: .75em;
+    border-width: 2px;
+}
+#newContractorPhoneInput {
+    margin-top: -.1em;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 525;
+    border-radius: .75em;
+    border-width: 2px;
+}
+#email {
+    margin-top: -.1em;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 525;
+    border-radius: .75em;
+    border-width: 2px;
+}
+#web {
+    margin-top: -.1em;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 525;
+    border-radius: .75em;
+    border-width: 2px;
+}
+#bname {
+    margin-top: -.1em;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 525;
+    border-radius: .75em;
+    border-width: 2px;
+}
+#fname {
+    margin-top: -.1em;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 525;
+    border-radius: .75em;
+    border-width: 2px;
+}
+#lname {
+    margin-top: -.1em;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 525;
+    border-radius: .75em;
+    border-width: 2px;
+}
+#city {
+    margin-top: -.1em;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 525;
+    border-radius: .75em;
+    border-width: 2px;
+}
+#state {
+    margin-top: -.1em;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 525;
+    border-radius: .75em;
+    border-width: 2px;
+}
+#zip {
+    margin-top: -.1em;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 525;
+    border-radius: .75em;
+    border-width: 2px;
+}
+#footer {
+    padding-bottom: 3rem;
+}
