@@ -263,10 +263,10 @@ require '../db_connect.php';
 						<h1>Message this Pro</h1>
 						<br>
 						<div class="d-flex align-items-end flex-column">
-							<form class="justify-content text-left" name="PM_sent" id="contactForm" action="PM_sent.php" method="POST">
+							<form class="justify-content text-left" name="PM_sent" id="contactForm" action="send_message.php" method="POST">
 								<input type="hidden" id="sessionStatus" value="<?php echo (isset($_SESSION['status_msg'])) ?  $_SESSION['status_msg'] : null; ?>" />
-								<input hidden id="bizID" name="bizID" type="text" value="<?php echo $_GET['uID']; ?>">
-								<input hidden id="bname" name="bname" type="text" value="<?php echo $uID; ?>">
+								<input hidden id="sent_to" name="sent_to" type="text" value="<?php echo $_GET['uID']; ?>">
+								<input hidden id="received_name" name="received_name" type="text" value="<?php echo $uID; ?>">
 								<div class="control-group form-group">
 									<div class="controls">
 										<label>Subject:</label>
@@ -293,7 +293,24 @@ require '../db_connect.php';
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
 	</section>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+	<script>
+		// AJAX call for autocomplete 
+		$(document).ready(function() {
+			showAlert();
+		});
 
+		function showAlert() {
+			if ($("#sessionStatus").val()) {
+				alert($("#sessionStatus").val());
+			}
+		}
+	</script>
+	<?php
+	unset($_SESSION['status_msg']);
+	?>
 </body>
 
 
